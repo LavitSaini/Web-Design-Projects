@@ -1,0 +1,22 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  margin: 16px;
+  display: grid;
+  padding: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.items {
+  background-color: #eee;
+  color: black;
+  height: 260px;
+  margin: 16px;
+  box-shadow: 0px 1px 5px rgba(104, 104, 104, 0.8);
+}

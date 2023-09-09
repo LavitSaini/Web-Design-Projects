@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating a Basic Navigaton Buttons In Css</title>
+    <style>
+      .navbar {
+        background-color: lightseagreen;
+        border-radius: 8px;
+      }
+
+      .navbar ul {
+        overflow: auto;
+      }
+
+      .navbar li {
+        float: left;
+        list-style: none;
+        margin: 14px 18px;
+      }
+
+      .navbar li a {
+        padding: 1px 1px;
+        text-decoration: none;
+        color: whitesmoke;
+      }
+
+      .navbar input
+      {
+        border: 1px solid black;
+        border-radius: 6px;
+        padding: 4px 5px;
+        float: right;
+        margin: 12px 20px;
+        cursor: pointer;
+        width: 200px;
+      }
+      .navbar li a:hover
+      {
+        color:midnightblue;
+        border: 2px solid blue
+      }
+      .search:hover 
+      {
+      background-color: whitesmoke;
+      border: 3px solid rgb(6, 100, 241);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Servise</a></li>
+          <li><a href="#">Contact Us</a></li>
+            <input type="text" class="search" id="search" placeholder="Search">
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

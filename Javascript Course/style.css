@@ -1,0 +1,23 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.box {
+  width: 100%;
+  background-color: steelblue;
+
+}
+
+h1 {
+  font-size: 36px;
+  background-color: aquamarine;
+  border: 2px solid black;
+}
+
+.bg-primary{
+  background-color: chartreuse;
+  height: 500px;
+  width: 50%;
+}
+

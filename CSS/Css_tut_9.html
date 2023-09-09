@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visibility and Z-Index Explained In Css</title>
+    <style>
+      .box {
+        width: 170px;
+        height: 170px;
+        border: 2px solid black;
+      }
+      #box1 {
+        /* Who Element Z-Index is More Who Element Gets More Area! */
+        position: relative;
+        z-index: 1;
+        background-color: red;
+        top: 80px;
+      }
+
+      #box2 {
+        /* Z-Index -->Will Work Only For position: Relative, Absolute,
+        Fixed or Sticky! */
+        background-color: blue;
+        position: relative;
+        z-index: 0;
+        
+      }
+
+      #box3 {
+        background-color: green;
+        position: relative;
+        z-index: 0;
+
+        /* visibility: hidden;--> Will Hide the element but will show its empty space */
+        /* display: none;--> Will Hide the element and space */
+      }
+
+      #box4 {
+        background-color: yellow;
+        position: relative;
+        top: -80px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+  </body>
+</html>

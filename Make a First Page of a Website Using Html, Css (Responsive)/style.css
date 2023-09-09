@@ -1,0 +1,301 @@
+* {
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+body {
+  background: url("Background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+#logo {
+  color: #0ddeff;
+  font-size: 36px;
+  padding-left: 25px;
+  font-family: "Kanit", sans-serif;
+}
+
+#logo:hover{
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#nav {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 66px;
+  margin-top: -40px;
+  font-size: 18px;
+}
+
+ul li a {
+  font-family: cursive;
+  text-decoration: none;
+  color: white;
+}
+
+ul li a:hover,
+ul li a.active {
+  color: #0ddeff;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.search {
+  float: right;
+  margin-right: 16px;
+  margin-top: -38px;
+}
+
+.srch {
+    height: 30px;
+    padding: 0px 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    border: 3px solid #0ddeff;
+    border-right: none;
+    width: 140px;
+    background: white;
+    font-family: "Kanit", sans-serif;
+    outline: none;
+}
+
+.srch:hover{
+  cursor: pointer;
+  outline: none;
+}
+
+.srch::placeholder{
+  color: black;
+  font-family: "Kanit", sans-serif;
+}
+
+.btn {
+  padding: 0px 6px;
+  color: black;
+  border-radius: 6px;
+  height: 30px;
+  font-size: 15px;
+  border: 2px solid #0ddeff;
+  cursor: pointer;
+  font-family: "Kanit", sans-serif;
+  background: #0ddeff;
+  margin: -1px -12px;
+}
+
+.btn:hover {
+  background: #0599b1;
+}
+
+.text{
+    height: auto;
+    margin: 50px;
+    color: white;
+    display: flex;
+    padding: 100px 0px;
+}
+
+.text .para{
+    letter-spacing: 1.2px;
+    line-height: 26px;
+    font-family: cursive;
+    padding-left: 10px;
+}
+
+h1{
+    padding: 5px 5px;
+    font-size: 40px;
+}
+
+.text button{
+    padding: 0px 8px;
+    font-size: 19px;
+    border-radius: 10px;
+    background-color: #0599b1;
+    margin: 7px 7px;
+    font-family: "Kanit", sans-serif;
+    color: black;
+}
+
+button:hover{
+    background-color: white;
+}
+
+.text button a{
+  text-decoration: none;
+  color: black;
+  border: none;
+  outline: none;
+}
+
+.text span{
+  color: #0ddeff;
+}
+
+.form{
+  width: 250px;
+  height: 380px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%,rgba(0, 0, 0, 0.8)50%);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.form h2{
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 22px;
+  background-color: #0ddeff;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px 13px;
+  font-family: "Kanit", sans-serif;
+}
+
+.form input{
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 2px solid #0ddeff;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 30px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.form input:focus{
+  outline: none;
+}
+
+::placeholder{
+  color: #fff;
+  font-family: cursive;
+}
+
+.but{
+  padding: 0px 80px;
+  font-size: 19px;
+  border-radius: 10px;
+  background-color: #0ddeff;
+  margin: 7px 15px;
+  font-family: "Kanit", sans-serif;
+  color: black; 
+  margin-top: 30px;
+}
+
+.but:hover{
+  background-color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.form .link{
+  font-family: cursive;
+  font-size: 16px;
+  padding-top: 10px;
+  text-align: center;
+  margin-left: -8px;
+  color: #fff;
+}
+
+
+.liw {
+  padding-top: 25px;
+  color: #fff;
+  margin-left: 60px;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.link a{
+  color: #0ddeff;
+  text-decoration: none;
+  text-shadow: #fff;
+}
+
+.link a:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+
+.icons a{
+  color: white;
+  text-decoration: none;
+  
+}
+
+.icons .fa{
+  font-size: 25px;
+  padding-top: 10px;
+  padding-left: 8px;
+  margin: 0px 8px;
+  color: #0ddeff;
+}
+.icons .fa:hover{
+  color: white;
+  transition: 0.4s;
+}
+
+.main{
+  margin-right: 6rem;
+}
+
+
+/* Responsive */
+
+/* Width 0 to 468px --> Mobile Phone */
+@media (max-width:468px) {
+  
+  body{
+    height: 100%;
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+   margin: auto;
+    display: grid;
+}
+
+
+.text .para {
+    margin: auto;
+    padding-top: 16px;
+    font-size: 26px;
+}
+
+h1 {
+  margin: auto;
+  padding-top: 16px;
+  font-size: 44px;
+}
+
+.text button {
+  padding: 0px 8px;
+  margin-top: 36px;
+  margin: auto;
+}
+}
+

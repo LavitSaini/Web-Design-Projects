@@ -1,0 +1,568 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Navbar Section */
+header {
+  position: sticky;
+  top: 0;
+  opacity: 0.85;
+  z-index: 1;
+}
+
+#navbar {
+  height: 50px;
+  background-color: black;
+  width: 100%;
+}
+
+#navbar ul {
+  display: flex;
+  line-height: 50px;
+  float: right;
+  position: relative;
+  left: -12px;
+}
+
+#navbar ul li {
+  padding: 0px 5px;
+  list-style: none;
+  margin: 0px 8px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: black;
+  margin: 0px 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+#navbar ul li a:hover {
+  color: skyblue;
+  border-bottom: 1px solid skyblue;
+  transition: 0.1s;
+}
+
+/* Logo Section */
+
+#logo {
+  position: relative;
+  top: 10px;
+  left: 24px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+
+#logo a {
+  text-decoration: none;
+  color: white;
+}
+#logo a:hover {
+  color: skyblue;
+  border-bottom: 1.5px solid skyblue;
+  transition: 0.1s;
+}
+
+/* Checkbox Section */
+#navbar input {
+  display: none;
+}
+
+#navbar label {
+  display: none;
+}
+
+/* Body Section */
+
+/* Welcome Section */
+
+#welcome {
+  width: 100%;
+  height: 440px;
+  text-align: center;
+  background-image: url("/Images/bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome h1 {
+  position: relative;
+  top: 100px;
+  font-size: 6rem;
+  color: rgb(244, 239, 239);
+  text-transform: uppercase;
+}
+
+#welcome p {
+  position: relative;
+  top: 100px;
+  font-size: 2.4rem;
+  color: rgb(240, 232, 232);
+}
+
+#welcome button a {
+  text-decoration: none;
+  color: black;
+}
+
+#welcome button {
+  position: relative;
+  top: 110px;
+  cursor: pointer;
+  padding: 8px 10px;
+  font-size: 19px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  background-color: white;
+  font-weight: 600;
+}
+
+#welcome button:hover {
+  background-color: skyblue;
+  color: black;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+#button {
+  display: none;
+}
+
+/* About Section Heading */
+
+#heading {
+  font-size: 3.8em;
+  text-align: center;
+  position: relative;
+  top: 1px;
+  margin-bottom: 2px;
+  background-color: black;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* About Section */
+
+#about {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  text-align: center;
+  background-color: black;
+}
+
+.box {
+  width: 344px;
+  height: 244px;
+  margin: 16px 16px;
+  border-radius: 19px;
+  padding: 8px 24px;
+  text-align: justify;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 8px 6px rgb(50, 141, 177);
+}
+
+.box h2 {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 2.5em;
+}
+
+#fir {
+  background-image: url("/Images/Introduction.jpg");
+}
+
+#sec {
+  background-image: url("/Images/Education.webp");
+}
+
+#thi {
+  background-image: url("/Images/Experience.jpg");
+}
+
+.box p {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.9rem;
+  word-spacing: 0.2rem;
+  font-weight: 600;
+}
+
+/* Projects Section Heading */
+
+#heads {
+  text-align: center;
+  font-size: 3.8em;
+  background-color: black;
+  color: white;
+  height: 82px;
+  padding-top: 8px;
+  position: relative;
+  top: 1px;
+  margin-bottom: 21px;
+}
+
+/* Projects Section */
+
+#projects {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -19px;
+  padding-bottom: 21px;
+  padding-top: 21px;
+}
+
+.itself img {
+  height: 388px;
+  width: 800px;
+  margin: 24px;
+  border: 0.5px solid white;
+  border-radius: 19px;
+}
+
+.itself img:hover {
+  height: 404px;
+  width: 828px;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0px 0px 8px 6px rgb(48, 134, 168);
+  border: none;
+}
+
+/* Contact Section Heading*/
+
+#headed {
+  align-items: center;
+  font-size: 3.8em;
+  background-color: black;
+  color: white;
+  height: 82px;
+  position: relative;
+  top: 1px;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Contact Section */
+#contact {
+  background-image: url("/Images/Contact\ Me.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.form {
+  width: 65%;
+  margin: 8px 0px;
+  padding: 8px;
+  border-radius: 9px;
+  font-weight: 600;
+  color: black;
+  border: 2px solid black;
+  max-width: 840px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.form:hover {
+  border: none;
+  box-shadow: 0px 0px 8px 6px rgb(48, 134, 168);
+}
+
+.form::placeholder {
+  color: black;
+  font-weight: 600;
+}
+
+.form:focus {
+  outline: none;
+}
+
+.btn {
+  padding: 4px 9px;
+  max-width: 95px;
+  margin-top: 8px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.btn:hover {
+  border: none;
+  box-shadow: 0px 0px 8px 6px rgb(48, 134, 168);
+}
+/* Responsive Css */
+
+@media (max-width: 928px) {
+  /* Navbar Section */
+
+  header {
+    opacity: 1;
+  }
+
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    left: -100%;
+    height: 324px;
+    padding-top: 8px;
+    transition: 0.5s;
+  }
+
+  #navbar ul li {
+    padding: 4px 0px;
+    margin: 4px 0px;
+  }
+
+  #navbar ul li a {
+    color: black;
+  }
+
+  #navbar ul li a:hover {
+    color: black;
+    border-bottom: none;
+    box-shadow: 0px 0px 8px 6px rgb(48, 134, 168);
+    padding: 5px 6px;
+    border-radius: 9px;
+  }
+
+  /* Body Section */
+
+  /* About Section */
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    height: auto;
+  }
+
+  .box {
+    margin: 19px;
+    width: 400px;
+    height: 244px;
+  }
+
+  /* Projects Section */
+  #projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 24px;
+  }
+
+  .itself img {
+    height: auto;
+    width: 544px;
+    border: 1px solid white;
+    margin: 0px 21px;
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+  .itself img:hover {
+    height: auto;
+    width: 560px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  /* Contact Section */
+
+  .form {
+    width: 75%;
+  }
+
+  /* Checkbox Section */
+
+  #navbar #btn {
+    display: block;
+    position: relative;
+    float: right;
+    top: 13px;
+    right: 16px;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  #navbar #btn:hover {
+    color: skyblue;
+  }
+
+  #navbar #button {
+    display: none;
+    position: relative;
+    float: right;
+    top: 12px;
+    right: 16px;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  #navbar #btn {
+    color: white;
+  }
+
+  #check:checked ~ ul {
+    left: 0px;
+    z-index: 1;
+  }
+
+  #check:checked ~ #btn {
+    display: none;
+  }
+
+  #check:checked ~ #button {
+    display: block;
+    color: white;
+    font-size: 1.6rem;
+  }
+
+  #check:checked ~ #button:hover {
+    color: skyblue;
+  }
+}
+
+@media (max-width: 628px) {
+  /* Body Section */
+
+  /* Welcome Section */
+
+  #welcome h1 {
+    font-size: 14vw;
+  }
+
+  #welcome p {
+    font-size: 5.5vw;
+  }
+
+  #logo {
+    font-size: 19px;
+    top: 15px;
+    left: 16px;
+  }
+
+  #welcome button {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 8px;
+    border: none;
+  }
+
+  #welcome button:hover {
+    border: none;
+  }
+  /* About Section Heading*/
+
+  #heading {
+    font-size: 9vw;
+  }
+
+  /* About Section */
+
+  .box h2 {
+    font-size: 7vw;
+  }
+
+  .box p {
+    font-size: 4vw;
+    word-spacing: 0px;
+    line-height: initial;
+    padding-bottom: 44px;
+  }
+
+  #about {
+    padding-bottom: 6px;
+  }
+
+  .box {
+    margin: auto;
+    width: 72%;
+    border-radius: 13px;
+    height: auto;
+    margin-bottom: 21px;
+  }
+
+  /* Projects Section Heading */
+
+  #heads {
+    font-size: 9vw;
+    height: auto;
+    padding-bottom: 8px;
+  }
+
+  /* Project Section */
+
+  #projects {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8px;
+  }
+
+  .Itself img {
+    width: 85%;
+    height: auto;
+    margin: 0px;
+    margin-top: 20px;
+    border-radius: 13px;
+    margin-bottom: 21px;
+    margin-top: 6px;
+  }
+
+  .Itself img:hover {
+    width: 88%;
+  }
+
+  .Itself {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Contact Section Heading */
+
+  #headed {
+    font-size: 9vw;
+    height: auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  /* Contact Section */
+  .form {
+    width: 78%;
+  }
+
+ 
+}

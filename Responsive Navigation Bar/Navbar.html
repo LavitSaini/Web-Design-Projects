@@ -1,0 +1,129 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navigation Bar Using Html and Css</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: auto;
+        box-sizing: border-box;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      }
+
+      nav {
+        width: 100%;
+        height: 60px;
+        background-color: #040404;
+      }
+
+      label.logo {
+        font-size: 35px;
+        color: white;
+        margin: 0px 20px;
+        line-height: 60px;
+      }
+
+      nav ul {
+        float: right;
+        list-style: none;
+      }
+
+      nav ul li {
+        display: inline-block;
+        line-height: 60px;
+        margin: 0px 15px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin: 0px 0px;
+        border-radius: 6px;
+      }
+
+      nav ul li a:hover,
+      nav ul li a.active {
+        background-color: #fff;
+        color: #060505;
+        transition: 1.5s ease;
+      }
+
+      #btn {
+        cursor: pointer;
+        float: right;
+        margin: 15px 12px;
+        font-size: 30px;
+        color: white;
+        display: none;
+      }
+
+      #check {
+        display: none;
+      }
+
+      #check:checked ~ ul {
+        left: 0%;
+      }
+
+     
+      @media (max-width: 828px) {
+        #btn {
+          display: block;
+        }
+
+        nav ul {
+          width: 100%;
+          height: 100%;
+          background-color: #313030;
+          position: fixed;
+          top: 60px;
+          left: -100%;
+          transition: 0.5s;
+          padding: 0px;
+        }
+
+        nav ul li {
+          display: block;
+          text-align: center;
+          line-height: 94px;
+          margin: 20px;
+        }
+
+        nav ul li a:hover,
+        nav ul li a:active
+         {
+          color: #040404;
+          background-color: #313030;
+          transition: 0.5s ease;
+          cursor: pointer;
+          font-size: 24px;
+          background-color: #fff;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" id="btn"><i class="fa fa-bars"></i></label>
+      <label class="logo">Logo</label>
+      <ul>
+        <li><a class="active" herf="#">Home</a></li>
+        <li><a herf="#">Services</a></li>
+        <li><a herf="#">About Us</a></li>
+        <li><a herf="#">Contct Us</a></li>
+      </ul>
+    </nav>
+    </div>
+  </body>
+</html>

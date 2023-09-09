@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and After Pseudo Selectors In Css</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        color: white;
+      }
+
+      header::before {
+        content: "";
+        background: url(https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=2000)
+          no-repeat center center/cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.9;
+      }
+
+      .navigation {
+        font-family: cursive;
+        display: flex;
+        font-size: 15px;
+        padding: 0px 0px;
+        margin: 0px 0px;
+        height: 50px;
+        cursor: pointer;
+        position: sticky;
+        background-color: black;
+      }
+
+      li {
+        list-style: none;
+        padding: 13px 35px;
+      }
+
+      /* section::before{
+      content: "This is a Before Section Content"
+      } */
+
+      /* section::after{
+        content:"This is a After Section  Content"
+      } */
+
+      h3 {
+        font-size: 2em;
+      }
+
+      p {
+        text-align: center;
+        font-size: 20px;
+      }
+
+      li:hover {
+        background-color: white;
+        border-radius: 15px;
+        padding: 0px 10px;
+        margin: 12px 24px;
+        border: 3px solid rgb(55, 181, 222);
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li class="item"><a>Home</a></li>
+          <li class="item"><a>Services</a></li>
+          <li class="item"><a>Contact Us</a></li>
+          <li class="item"><a>About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

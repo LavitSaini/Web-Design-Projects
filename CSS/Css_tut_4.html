@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear In Css</title>
+    <style>
+        *{
+        box-sizing: border-box;
+        border-radius: 16px;
+        }
+
+        body
+        {
+        font-family: monospace;
+        }
+
+        .container
+        {
+       border: 12px solid rgb(55, 131, 131);
+       width: 900px;
+       margin: 40px auto;
+       
+        }
+
+       .items
+       {
+       border: 8px solid rosybrown;
+       padding: 20px 20px;
+       margin: 24px 24px;
+       background-color: aquamarine;
+       }
+
+       #fruits
+       {
+       float:left;
+       width: 40%;
+
+       }
+
+       #computer
+       {
+       float: left;
+       width: 42%;
+
+       }
+
+       #plastic
+       {
+         /* float: left; */
+       clear: left;
+       width: 88%;
+       } 
+
+       p, h2
+       {
+        text-align: center;
+       }
+
+       h1
+       {
+        margin: 20px auto;
+        width: 360px;
+        color: rgb(105, 7, 243);
+        font-size: 34px;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Store </h1>
+        <div id="fruits" class="items">
+            <h2>Fruits</h2>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, distinctio corrupti. Asperiores recusandae animi architecto quis. Cumque earum officia exercitationem saepe aut repudiandae ipsa, eligendi ut unde facilis expedita reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ad reprehenderit dolorum tenetur, doloremque eveniet. Harum, repellendus. Totam culpa iure ea, illo eaque fugit expedita temporibus cumque, esse sequi nisi?</p>
+        </div>
+
+            <div id="computer" class="items">
+                <h2>Computer</h2>
+                <p id="computerspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, disticorrupti. Asperiores recusandae animi architecto quis. Cumque earum officia exercitationem saepe aut repudiandae ipsa, eligendi ut unde facilis expedita reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto possimus magni minus reprehenderit dolorum laboriosam quam, nesciunt consectetur porro, explicabo a quasi pariatur aliquam vel adipisci voluptate consequuntur mollitia accusamus!</p>
+                </div>
+
+                <div id="plastic" class="items">
+                <h2>Plastic</h2>
+                <p id="plasticpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, distinctio corrupti. Asperiores recusandae animi architecto quis. Cumque earum officia exercitationem saepe aut repudiandae ipsa, eligendi ut unde facilis expedita reprehenderit.</p>
+                </div>
+
+                <div id="plastic" class="items">
+                    <h2>Plastic</h2>
+                    <p id="plasticpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, distinctio corrupti. Asperiores recusandae animi architecto quis. Cumque earum officia exercitationem saepe aut repudiandae ipsa, eligendi ut unde facilis expedita reprehenderit.</p>
+                    </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

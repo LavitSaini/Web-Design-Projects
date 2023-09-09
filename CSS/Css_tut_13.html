@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selectors In Css</title>
+    <style>
+  h1
+  {
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* if p is Contained by any li which is contained by div then this css is applied*/
+
+  /* div li p
+  {
+    color: black;
+    background-color: chartreuse;
+    font-weight: bold;
+  } */
+
+
+  /* if p is right inside  div then this css is applied */
+
+   /* div > p
+  {
+    color: black;
+    background-color: rgb(255, 187, 0);
+    font-weight: bold;
+  } */
+
+
+  /* if p is the next sibling of div */
+  
+  /* div + ul
+  {
+    color: aliceblue;
+    background-color: fuchsia;
+  } */
+
+    </style>
+</head>
+<body>
+    <h1>This is More Number of Selectors In Css</h1>
+
+    <div class="container">
+        <div class="row">
+            <ul>
+           <li class="item"><p>This is Another Paragraph Inside li</p></li>
+           <li>This is not Effected</li>
+           <p>This is a Para Inside ul</p>
+        </ul>
+        <p>This is a Paragraph</p>
+    </div>
+    <p>This is a Another Paragraph</p>
+    </div>
+    <p>This is a Outermost Paragraph</p>
+</body>
+</html>

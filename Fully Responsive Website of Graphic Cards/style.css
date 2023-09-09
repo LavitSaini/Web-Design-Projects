@@ -1,0 +1,365 @@
+* {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  box-sizing: border-box;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Main Css of Website */
+
+/* Navbar Section */
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar {
+  background-color: green;
+  color: white;
+  height: 50px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  float: right;
+}
+
+ul li {
+  display: inline-block;
+  line-height: 55px;
+  margin: 0px 8px;
+  text-transform: uppercase;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  text-transform: capitalize;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  left: -12px;
+  padding: 0px 8px;
+  padding-top: 3px;
+  padding-bottom: 0px;
+}
+ul li a:hover {
+  color: black;
+  border-bottom: 2px solid black;
+  text-decoration-color: black;
+  transition: 0.1s ease;
+  border-radius: 10px;
+  padding-bottom: 0px;
+  margin: 0px 0px;
+}
+
+.logo img {
+  height: 35px;
+  width: 45px;
+  position: absolute;
+  top: 9px;
+  left: 16px;
+  cursor: pointer;
+}
+
+.logo img:hover {
+  padding: 2px;
+}
+
+#same {
+  display: none;
+}
+
+#btn {
+  display: none;
+}
+
+#close {
+  display: none;
+}
+
+/* Body Section */
+
+#first {
+  background: url("Images/bg-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90%;
+}
+
+#text {
+  color: whitesmoke;
+  text-align: center;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+#text h2 {
+  font-size: 7rem;
+  position: relative;
+  top: 60px;
+  padding: 2px;
+  margin: 2px;
+  text-shadow: 6px 6px 6px green
+}
+#text p {
+  font-size: 23px;
+  position: relative;
+  top: 16px;
+  padding: 0px 16px;
+  margin: 0rem 5rem;
+}
+
+.nvidia {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  margin: 0px 5px;
+  font-size: 2.5rem;
+  margin-top: 8px;
+  color: black;
+  text-shadow: 2px 2px 8px green;
+}
+
+.why {
+  height: 330px;
+  display: flex;
+  align-items: center;
+  width: 95%;
+  justify-content: center;
+  background-color: black;
+  border-radius: 36px;
+  padding: 0px 24px;
+}
+
+.a {
+  border: 2px solid green;
+  height: 260px;
+  width: inherit;
+  margin: 0px 16px;
+  border-radius: 24px;
+  text-align: center;
+  color: white;
+}
+
+.a h2{
+  text-shadow: 2px 2px 8px green
+}
+
+.a p{
+  padding: 16px;
+  text-align: justify;
+  margin-top: 8px;
+  color: white;
+}
+
+#x {
+  background: url("/Images/Rtx.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#y {
+  background: url("/Images/Dlss.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#z {
+  background: url("/Images/Fps.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.products {
+  height: 200px;
+}
+
+/* Responive Css for Width of Website */
+
+@media (max-width: 960px) {
+  /* Navbar Section */
+
+  #btn {
+    display: block;
+    float: right;
+    position: relative;
+    top: 12px;
+    right: 16px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: -100%;
+    transition: 0.5s;
+    height: 100%;
+    background-color: white;
+    align-items: center;
+    z-index: 1;
+    height: 100vh;
+  }
+
+  ul li {
+    padding: 0;
+    margin: 9px 0px;
+    text-align: left;
+    margin-left: 16px;
+    padding-left: 19px;
+  }
+
+  ul li a {
+    color: black;
+    font-size: 24px;
+    position: relative;
+  }
+
+  ul li a:hover {
+    color: green;
+    cursor: pointer;
+    font-size: 26px;
+    transition: 0.1s ease;
+    border-bottom: 3px solid green;
+  }
+
+  #same:checked ~ ul {
+    left: 0;
+    z-index: 1;
+  }
+
+  #same:checked ~ #btn {
+    display: none;
+  }
+
+  /* Body Section */
+
+  #first {
+    height: 85%;
+  }
+
+  #same:checked ~ #close {
+    display: block;
+  }
+
+  #close {
+    display: none;
+    float: right;
+    position: relative;
+    top: 12px;
+    right: 16px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  #text h2 {
+    font-size: 6rem;
+    position: relative;
+    top: 66px;
+    padding: 2px;
+    margin: 2px;
+  }
+
+  #text p {
+    font-size: 20px;
+    position: relative;
+    top: 24px;
+    padding: 5px 8px;
+    margin: 5px 8px;
+  }
+
+  .nvidia {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .head {
+    margin: 0px 5px;
+    font-size: 2.0rem;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .why{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    margin: 0px 16px;
+  }
+
+  .a{
+    width: inherit;
+    height: 330px;
+    margin: 9px 18px;
+    border: 5px solid green;
+  }
+
+  .a h2{
+    font-size: 36px;
+  }
+
+
+}
+
+@media (max-width: 660px) {
+  /* Body Section */
+
+  #first {
+    height: 80%;
+  }
+
+  #text h2 {
+    font-size: 3.5rem;
+    position: relative;
+    top: 62px;
+    padding: 2px;
+    margin: 2px;
+  }
+
+  #text p {
+    font-size: 16px;
+    position: relative;
+    top: 38px;
+    padding: 0px 4px;
+    margin: 0px 4px;
+  }
+}
+
+@media (max-width: 260px) {
+  /* Body Section */
+
+  #first {
+    height: 90%;
+  }
+
+  #text h2 {
+    font-size: 2.5rem;
+    position: relative;
+    top: 75px;
+    padding: 2px;
+    margin: 2px;
+  }
+
+  #text p {
+    font-size: 12px;
+    position: relative;
+    top: 65px;
+    padding: 0px 2px;
+    margin: 0px 2px;
+  }
+}

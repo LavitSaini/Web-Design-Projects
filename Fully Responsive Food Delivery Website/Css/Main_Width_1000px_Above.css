@@ -1,0 +1,347 @@
+html{
+  scroll-behavior: smooth;
+}
+
+/* Css Reset */
+* {
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+
+/* Navigation Bar */
+#navbar {
+  position: sticky;
+  display: flex;
+  align-items: center;
+}
+
+#navbar::before {
+  content: "";
+  background-color:rgb(152 127 127);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo img {
+  width: 60px;
+  height: 50px;
+  margin: 5px 20px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 0px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 0px 14px;
+  cursor: pointer;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+  padding: 2px 8px;
+  margin: 0px 30px;
+  transition: 0.5s;
+}
+
+/* Home Section */
+#home {
+  background: url("../Background Images/bg-image.jpg") no-repeat center
+  center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 115%;
+}
+
+#home h1 {
+  text-align: center;
+  font-family: "Bree Serif", serif;
+  color: whitesmoke;
+}
+
+#home p {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Bree Serif", serif;
+}
+
+/* Services Section */
+#services {
+  display: flex;
+  margin: auto;
+  width: 98%;
+}
+
+#services .box {
+  padding: 10px;
+  margin: -15px 15px;
+  background-color: #e5dcdc;
+  font-family: "Bree Serif", serif;
+  border: 2px solid black;
+  border-radius: 16px;
+}
+
+
+#services .box img {
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+
+/* Process to Order Food From Our Website Section */
+#food-ordering {
+  margin: 20px 22px;
+  border: 2px solid black;
+  border-radius: 16px;
+  background: #e5e3e3;;
+  padding: 0px 0px;
+  height: 440px;
+  width: 95%;
+  margin-top: 30px;
+}
+
+#process {
+  display: flex;
+  padding: 0px 70px;
+  margin: auto;
+  justify-content: center;
+}
+
+#food-ordering {
+  margin: auto;
+  height: 440px;
+  margin-top: 38px;
+}
+
+.steps {
+  background-color: #e5dcdc;;
+  border: 1px solid black;
+  padding: 12px;
+  margin: 20px 40px;
+  text-align: center;
+  border-radius: 14px;
+}
+
+.steps img {
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+
+.order {
+  font-family: "Bree Serif", serif;
+  margin: 5px 0px;
+  font-size: 22px;
+}
+
+/* Client Section */
+
+#clients-section {
+  margin: auto;
+ position: relative;
+  width: 100%;
+  margin-top: 36px;
+}
+
+#clients-section::before {
+  content: "";
+  position: absolute;
+  background: url("../Background Images/Clients.jpg") center center/cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+
+#cleints-section h1 {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: "Baloo Bhai 2", cursive;
+  padding: 0px 0px;
+  margin: -25px 0px;
+  color: #050505;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -30px 0px;
+}
+.clients-items {
+  padding: 20px;
+}
+#clients img {
+  height: 100px;
+  padding: 0px 8px;
+}
+
+/* Contact Section */
+
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 610px;
+  z-index: -1;
+  margin-top: 8px;
+  opacity: 0.8;
+  background: url("../Background\ Images/bg for Contact Us.jpg") center
+    center/cover;
+  background-repeat: no-repeat;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+  border: 2px solid black;
+  margin-top: 8px;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 38px;
+}
+
+#contact-box form {
+  width: 40%;
+}
+
+#contact-box label {
+  font-size: 1.5rem;
+  font-family: "Bree Serif", serif;
+}
+
+/* Footer Section */
+footer {
+  background-color: #181616;
+  color: white;
+  margin: -8px 0px;
+  height: 20px;
+  padding: 40px 0px;
+  text-align: center;
+}
+
+#End {
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 1.3rem;
+  margin: auto;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-size: 2.2rem;
+  padding: 10px;
+  font-family: "Baloo Bhai 2", cursive;
+  text-align: center;
+  color: #191818;
+}
+
+.h-fourth {
+  font-size: 2.2rem;
+  padding: 10px;
+  font-family: "Baloo Bhai 2", cursive;
+  color: #191818;
+}
+
+.h-tertiory {
+  font-size: 2.2rem;
+  padding: 10px;
+  font-family: "Baloo Bhai 2", cursive;
+  color: #191818;
+  color: white;
+}
+
+.btn {
+  padding: 4px 14px;
+  border: 2px solid rgb(40, 38, 38);
+  background-color: rgb(240, 137, 137);
+  color: rgb(41, 39, 39);
+  margin: 18px;
+  font-size: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Baloo Bhai 2", cursive;
+
+}
+
+.btn:hover {
+  font-size: 18px;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+  margin-top: -5px;
+}
+
+.center1 {
+  text-align: center;
+  margin: auto;
+  margin-top: -5px;
+}
+
+.center2 {
+  text-align: center;
+  margin: auto;
+  margin-top: -5px;
+}
+
+.center3 {
+  text-align: center;
+  margin: auto;
+  margin-top: -8px;
+  border-top: 5px solid black
+}
+
+.group{
+  color: white;
+  margin-top: 28px;
+  text-align: center;
+}
+
+.btn a{
+  text-decoration: none;
+  color: black;
+}
+
+#contact-box input::placeholder{
+  color: #050505;
+}
+
+#contact-box input:focus{
+  outline: none;
+}
+
+#message:focus{
+  outline: none;
+}

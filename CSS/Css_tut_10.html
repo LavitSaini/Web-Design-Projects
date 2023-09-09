@@ -1,0 +1,111 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box Tutorial In Css</title>
+    <style>
+      .container {
+        width: 100%;
+        height: 60%;
+        border: 3px solid black;
+
+        display: flex;
+        /* flex is Use for Best Layout in Website */
+
+
+        /* Flex Properties for flex container */
+        /* Intilialize the container as a flex box */
+
+        /* flex-direction: row; */ /*(Default Value of flex Direction is Row)*/
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse;  */
+
+        /* flex-wrap: wrap; */ /*(Default Value of flex Direction is No Row) */
+        /* flex-wrap: wrap-reverse; */
+
+        /* (Use flex-flow for Set Two Properties at once Time) */
+        /* flex-flow: row-reverse wrap; */
+
+        /* justify-content will Justify the Content in  horizontal direction */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+
+        /* align-items will align the Content in  vertical direction  */
+        /* align-items: center; */
+        /* align-items: flex-end; */
+        /* align-items: flex-start; */
+        /* align-items: stretch; */
+
+        /* flex-direction: row; */
+        /* when flex-direction is Set to row Then flex-basis Adjust Width Size */
+
+        /* flex-direction: column; */
+        /* when flex-direction is Set to coloum Then flex-basis Adjust  Height Size */
+      }
+
+      .item {
+        background-color: tomato;
+        border: 2px solid rgb(0, 0, 0);
+        margin: 12px 12px;
+        padding: 5px 5px;
+        width: 350px;
+        height: 350px;
+      }
+
+      #box-1 {
+        /* Flex Properties for flex Boxes\items */
+        /* Higher the order , later it show up in the container */
+        /* order: 2; */
+
+        /* Whose element have more flex-grow its strech more than other boxes */
+        /* flex-grow: 3; */
+
+        /* Whose element have more flex-shrink its strech more but if we Adjust the size of Website with Inspect methood then its strech less than other boxes  */
+        /* flex-shrink: 2; */
+
+        align-self:flex-end;
+      }
+
+      #box-2 
+      {
+        /* flex-grow: 5; */
+        /* flex-shrink: 3;*/
+
+        flex: 3 3 350px;
+        /* flex: flex-grow flex-shrink flex-basis; */
+
+        align-self:flex-start;
+      } 
+
+      #box-3 {
+        order: 14;
+        /* flex-grow: 8; */
+        /* flex-shrink: 8; */
+        flex-basis: 350px;
+        /* when flex-direction is set to row flex-basis: will control width */
+        /* when flex-direction is set to coloum flex-basis: will control height */
+
+        
+       
+        align-self: center;
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>This is Flex Box Tutorial</h1>
+    <div class="container">
+      <div class="item" id="box-1">First Box</div>
+      <div class="item" id="box-2">Second Box</div>
+      <div class="item" id="box-3">Third Box</div>
+      <!-- <div class="item" id="box-4">Fourth Box</div>
+      <div class="item" id="box-5">Fifth Box</div>
+      <div class="item" id="box-6">Sixth Box</div> -->
+    </div>
+  </body>
+</html>

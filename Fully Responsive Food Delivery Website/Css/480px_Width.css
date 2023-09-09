@@ -1,0 +1,118 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+.btn {
+    padding: 2px 8px;
+    border: 2px solid rgb(40, 38, 38);
+    background-color: rgb(240, 137, 137);
+    color: rgb(41, 39, 39);
+    font-size: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Baloo Bhai 2", cursive;
+}
+
+#navbar ul li a {
+    font-size: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#home p {
+    font-size: 10px;
+}
+
+#home h1 {
+    font-size: 15px;
+}
+
+#clients img {
+    padding: 0px 0px;
+    height: 45px;
+    width: 65px;
+    margin: auto;
+}
+
+#clients-section {
+    margin: auto;
+    width: 100%;
+    height: 196px;
+    margin-top: 30px;
+}
+
+.clients-items {
+    padding: 16px 20px;
+}
+
+#clients-section::before {
+    margin: auto;
+    height: 216px;
+    width: 100%;
+}
+
+#contact-box input, #contact-box textarea {
+    width: 120%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    padding: 2px 4px;
+    font-size: 0.6rem;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#contact::before {
+    margin: auto;
+    height: 325px;
+}
+.h-fourth {
+    font-size: 16px;
+    padding: 5px 0px;
+    color: white;
+    margin-top: 25px;
+}
+
+.h-tertiory {
+    font-size: 16px;
+    padding: 5px 0px;
+    color: white;
+}
+
+#contact-box {
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#End {
+    font-size: 8px;
+    margin-top: 10px;
+}
+
+#navbar {
+    position: sticky;
+    display: flex;
+    align-items: center;
+  }
+
+  #home {
+    background: url("../Background Images/bg-image.jpg") no-repeat center
+    center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 34%;
+  }
+
+  footer {
+    background-color: #181616;
+    color: white;
+    margin: 0px 0px;
+    height: 33px;
+    padding: 10px 0px;
+    text-align: center;
+}

@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal, External and Inline Css</title>
+    <!-- Inline Css Take First Precedence
+    Internal and External Css who Takes First Precedence Whose Writtens First! -->
+
+
+    <!--This is Internal Css -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+/* This is External Css */
+
+h2 
+{
+    color:mediumseagreen; 
+}
+
+/* Element Selectors */
+
+.u 
+{
+    color: blue;
+    border: 5px solid hotpink;
+    font-weight: bold;
+    font-size: 30px; /* px --> 1/96th of an inch */
+    line-height: 2.8em;
+    font-weight:bold;
+}
+
+#ss
+ {
+border: 5px solid hotpink;
+font-size: 30px;
+font-weight: bold;
+color: blueviolet;
+}
+
+footer, div
+{
+    background-color:hotpink
+}
+
+#orange
+{
+ color: rgb(255, 0, 162);           /*Color Defined by Simple Way */
+ background-color:aquamarine;
+}
+
+.white
+{
+color: rgb(0, 145, 122);     /*Color Defined by rgb Way */
+background-color: rgb(138, 245, 66);
+}
+
+#green{ 
+    color: #fc04db;         /*Color Defined by Hex Way */
+    background-color: #8af542;
+}
+  
+  </style>
+
+</head>
+<body>
+    <!-- This is Inline Css -->
+    <!-- Comperison to Internal and External Css the Inline Css is Used First -->
+    <div>
+    <h2>This is Css Tutorial</h2>
+</div>
+    <p id="ss">Hello Cascading Style Sheets!</p>
+    <pre class="u">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Dolores officiis, aut quis culpa repellat doloremque quaerat provident minus cupiditate.
+         Eum porro consequuntur quisquam ipsum officia quibusdam nam facere deleniti debitis?</pre>
+         <br>
+         <h1 id="orange">This is Color Technique</h1>
+         <p id="orange">This is a 1st paragraph</p>
+         <br>
+         <h1 class="white"> This is Color Technique</h1>
+         <p  class="white">This is a 1st paragraph</p>
+         <br>
+         <h1 id="green">This is Color Technique</h1>
+         <p id="green">This is a 1st paragraph</p>
+    <footer>Hello This is footer!</footer>
+
+</body>
+</html>
